@@ -23,6 +23,1009 @@
   year={1905}
 }
 
+
+@inproceedings{li-feng-2024-motion,
+    title = "Motion Generation from Fine-grained Textual Descriptions",
+    author = "Li, Kunhang  and
+      Feng, Yansong",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.1016",
+    pages = "11625--11641",
+    abstract = "The task of **text2motion** is to generate human motion sequences from given textual descriptions, where the model explores diverse mappings from natural language instructions to human body movements. While most existing works are confined to coarse-grained motion descriptions, e.g., {\_}{''}A man squats.{''}{\_}, fine-grained descriptions specifying movements of relevant body parts are barely explored. Models trained with coarse-grained texts may not be able to learn mappings from fine-grained motion-related words to motion primitives, resulting in the failure to generate motions from unseen descriptions. In this paper, we build a large-scale language-motion dataset specializing in fine-grained textual descriptions, FineHumanML3D, by feeding GPT-3.5-turbo with step-by-step instructions with pseudo-code compulsory checks. Accordingly, we design a new text2motion model, FineMotionDiffuse, making full use of fine-grained textual information. Our quantitative evaluation shows that FineMotionDiffuse trained on FineHumanML3D improves FID by a large margin of 0.38, compared with competitive baselines. According to the qualitative evaluation and case study, our model outperforms MotionDiffuse in generating spatially or chronologically composite motions, by learning the implicit mappings from fine-grained descriptions to the corresponding basic motions. We release our data at [https://github.com/KunhangL/finemotiondiffuse](https://github.com/KunhangL/finemotiondiffuse).",
+}
+
+@inproceedings{tao-etal-2024-probing,
+    title = "Probing Multimodal Large Language Models for Global and Local Semantic Representations",
+    author = "Tao, Mingxu  and
+      Huang, Quzhe  and
+      Xu, Kun  and
+      Chen, Liwei  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.1142",
+    pages = "13050--13056",
+    abstract = "The advancement of Multimodal Large Language Models (MLLMs) has greatly accelerated the development of applications in understanding integrated texts and images. Recent works leverage image-caption datasets to train MLLMs, achieving state-of-the-art performance on image-to-text tasks. However, there are few studies exploring which layers of MLLMs make the most effort to the global image information, which plays vital roles in multimodal comprehension and generation. In this study, we find that the intermediate layers of models can encode more global semantic information, whose representation vectors perform better on visual-language entailment tasks, rather than the topmost layers. We further probe models regarding local semantic representations through object recognition tasks. We find that the topmost layers may excessively focus on local information, leading to a diminished ability to encode global information. Our code and data are released via https://github.com/kobayashikanna01/probing{\_}MLLM{\_}rep.",
+}
+
+
+@inproceedings{liu-etal-2024-casa,
+    title = "{CASA}: Causality-driven Argument Sufficiency Assessment",
+    author = "Liu, Xiao  and
+      Feng, Yansong  and
+      Chang, Kai-Wei",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-long.296",
+    doi = "10.18653/v1/2024.naacl-long.296",
+    pages = "5282--5302",
+    abstract = "The argument sufficiency assessment task aims to determine if the premises of a given argument support its conclusion.To tackle this task, existing works often train a classifier on data annotated by humans. However, annotating data is laborious, and annotations are often inconsistent due to subjective criteria. Motivated by the definition of probability of sufficiency (PS) in the causal literature, we proposeCASA, a zero-shot causality-driven argument sufficiency assessment framework. PS measures how likely introducing the premise event would lead to the conclusion when both the premise and conclusion events are absent. To estimate this probability, we propose to use large language models (LLMs) to generate contexts that are inconsistent with the premise and conclusion and revise them by injecting the premise event.Experiments on two logical fallacy detection datasets demonstrate that CASA accurately identifies insufficient arguments. We further deploy CASA in a writing assistance application, and find that suggestions generated by CASA enhance the sufficiency of student-written arguments. Code and data are available at https://github.com/xxxiaol/CASA.",
+}
+
+@inproceedings{hu-etal-2023-unifee,
+    title = "{U}nif{EE}: Unified Evidence Extraction for Fact Verification",
+    author = "Hu, Nan  and
+      Wu, Zirui  and
+      Lai, Yuxuan  and
+      Zhang, Chen  and
+      Feng, Yansong",
+    editor = "Vlachos, Andreas  and
+      Augenstein, Isabelle",
+    booktitle = "Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.eacl-main.82",
+    doi = "10.18653/v1/2023.eacl-main.82",
+    pages = "1150--1160",
+    abstract = "FEVEROUS is a fact extraction and verification task that requires systems to extract evidence of both sentences and table cells from a Wikipedia dump, then predict the veracity of the given claim accordingly. Existing works extract evidence in the two formats separately, ignoring potential connections between them. In this paper, we propose a Unified Evidence Extraction model (UnifEE), which uses a mixed evidence graph to extract the evidence in both formats. With the carefully-designed unified evidence graph, UnifEE allows evidence interactions among all candidates in both formats at similar granularity. Experiments show that, with information aggregated from related evidence candidates in the fusion graph, UnifEE can make better decisions about which evidence should be kept, especially for claims requiring multi-hop reasoning or a combination of tables and texts. Thus it outperforms all previous evidence extraction methods and brings significant improvement in the subsequent claim verification step.",
+}
+
+@inproceedings{wang-etal-2023-intra,
+    title = "An Intra-Class Relation Guided Approach for Code Comment Generation",
+    author = "Wang, Zhenni  and
+      Yu, Xiaohan  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Vlachos, Andreas  and
+      Augenstein, Isabelle",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2023",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-eacl.97",
+    doi = "10.18653/v1/2023.findings-eacl.97",
+    pages = "1321--1333",
+    abstract = "Code comments are critical for maintaining and comprehending software programs, but they are often missing, mismatched, or outdated in practice. Code comment generation task aims to automatically produce descriptive comments for code snippets. Recently, methods based on the neural encoder-decoder architecture have achieved impressive performance. These methods assume that all the information required to generate comments is encoded in the target function itself, yet in most realistic situations, it is hard to understand a function in isolation from the surrounding context. Furthermore, the global context may contain redundant information that should not be introduced. To address the above issues, we present a novel graph-based learning framework to capture various relations among functions in a class file. Our approach is based on a common real-world scenario in which only a few functions in the source file have human-written comments. Guided by intra-class function relations, our model incorporates contextual information extracted from both the source code and available comments to generate missing comments. We conduct experiments on a Java dataset collected from real-world projects. Experimental results show that the proposed method outperforms competitive baseline models on all automatic and human evaluation metrics.",
+}
+
+@inproceedings{zhang-etal-2023-cross,
+    title = "Cross-Lingual Question Answering over Knowledge Base as Reading Comprehension",
+    author = "Zhang, Chen  and
+      Lai, Yuxuan  and
+      Feng, Yansong  and
+      Shen, Xingyu  and
+      Du, Haowei  and
+      Zhao, Dongyan",
+    editor = "Vlachos, Andreas  and
+      Augenstein, Isabelle",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2023",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-eacl.185",
+    doi = "10.18653/v1/2023.findings-eacl.185",
+    pages = "2439--2452",
+    abstract = "Although many large-scale knowledge bases (KBs) claim to contain multilingual information, their support for many non-English languages is often incomplete. This incompleteness gives birth to the task of cross-lingual question answering over knowledge base (xKBQA), which aims to answer questions in languages different from that of the provided KB. One of the major challenges facing xKBQA is the high cost of data annotation, leading to limited resources available for further exploration. Another challenge is mapping KB schemas and natural language expressions in the questions under cross-lingual settings. In this paper, we propose a novel approach for xKBQA in a reading comprehension paradigm. We convert KB subgraphs into passages to narrow the gap between KB schemas and questions, which enables our model to benefit from recent advances in multilingual pre-trained language models (MPLMs) and cross-lingual machine reading comprehension (xMRC). Specifically, we use MPLMs, with considerable knowledge of cross-lingual mappings, for cross-lingual reading comprehension. Existing high-quality xMRC datasets can be further utilized to finetune our model, greatly alleviating the data scarcity issue in xKBQA. Extensive experiments on two xKBQA datasets in 12 languages show that our approach outperforms various baselines and achieves strong few-shot and zero-shot performance. Our dataset and code are released for further research.",
+}
+
+@inproceedings{wu-etal-2023-align,
+    title = "Align-then-Enhance: Multilingual Entailment Graph Enhancement with Soft Predicate Alignment",
+    author = "Wu, Yuting  and
+      Hu, Yutong  and
+      Feng, Yansong  and
+      Li, Tianyi  and
+      Steedman, Mark  and
+      Zhao, Dongyan",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.56",
+    doi = "10.18653/v1/2023.findings-acl.56",
+    pages = "881--894",
+    abstract = "Entailment graphs (EGs) with predicates as nodes and entailment relations as edges are typically incomplete, while EGs in different languages are often complementary to each other. In this paper, we propose a new task, multilingual entailment graph enhancement, which aims to utilize the entailment information from one EG to enhance another EG in a different language. The ultimate goal is to obtain an enhanced EG containing richer and more accurate entailment information. We present an align-then-enhance framework (ATE) to achieve accurate multilingual entailment graph enhancement, which first exploits a cross-graph guided interaction mechanism to automatically discover potential equivalent predicates between different EGs and then constructs more accurate enhanced entailment graphs based on soft predicate alignments. Extensive experiments show that ATE achieves better and more robust predicate alignment results between different EGs, and the enhanced entailment graphs generated by ATE outperform the original graphs for entailment detection.",
+}
+
+@inproceedings{zhang-etal-2023-many,
+    title = "How Many Answers Should {I} Give? An Empirical Study of Multi-Answer Reading Comprehension",
+    author = "Zhang, Chen  and
+      Lin, Jiuheng  and
+      Liu, Xiao  and
+      Lai, Yuxuan  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.359",
+    doi = "10.18653/v1/2023.findings-acl.359",
+    pages = "5811--5827",
+    abstract = "The multi-answer phenomenon, where a question may have multiple answers scattered in the document, can be well handled by humans but is challenging enough for machine reading comprehension (MRC) systems. Despite recent progress in multi-answer MRC, there lacks a systematic analysis of how this phenomenon arises and how to better address it. In this work, we design a taxonomy to categorize commonly-seen multi-answer MRC instances, with which we inspect three multi-answer datasets and analyze where the multi-answer challenge comes from. We further analyze how well different paradigms of current multi-answer MRC models deal with different types of multi-answer instances. We find that some paradigms capture well the key information in the questions while others better model the relation between questions and contexts. We thus explore strategies to make the best of the strengths of different paradigms. Experiments show that generation models can be a promising platform to incorporate different paradigms. Our annotations and code are released for further research.",
+}
+
+@inproceedings{du-etal-2023-structure,
+    title = "Structure-Discourse Hierarchical Graph for Conditional Question Answering on Long Documents",
+    author = "Du, Haowei  and
+      Feng, Yansong  and
+      Li, Chen  and
+      Li, Yang  and
+      Lan, Yunshi  and
+      Zhao, Dongyan",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.391",
+    doi = "10.18653/v1/2023.findings-acl.391",
+    pages = "6282--6293",
+    abstract = "Conditional question answering on long documents aims to find probable answers and identify conditions that need to be satisfied to make the answers correct over long documents. Existing approaches solve this task by segmenting long documents into multiple sections, and attending information at global and local tokens to predict the answers and corresponding conditions. However, the natural structure of the document and discourse relations between sentences in each document section are ignored, which are crucial for condition retrieving across sections, as well as logical interaction over the question and conditions. To address this issue, this paper constructs a Structure-Discourse Hierarchical Graph (SDHG) and conducts bottom-up information propagation. Firstly we build the sentence-level discourse graphs for each section and encode the discourse relations by graph attention. Secondly, we construct a section-level structure graph based on natural structures, and conduct interactions over the question and contexts. Finally different levels of representations are integrated into jointly answer and condition decoding. The experiments on the benchmark ConditionalQA shows our approach gains over the prior state-of-the-art, by 3.0 EM score and 2.4 F1 score on answer measuring, as well as 2.2 EM score and 1.9 F1 score on jointly answer and condition measuring.",
+}
+
+@inproceedings{liu-etal-2023-magic,
+    title = "The Magic of {IF}: Investigating Causal Reasoning Abilities in Large Language Models of Code",
+    author = "Liu, Xiao  and
+      Yin, Da  and
+      Zhang, Chen  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.574",
+    doi = "10.18653/v1/2023.findings-acl.574",
+    pages = "9009--9022",
+    abstract = "Causal reasoning, the ability to identify cause-and-effect relationship, is crucial in human thinking. Although large language models (LLMs) succeed in many NLP tasks, it is still challenging for them to conduct complex causal reasoning like abductive reasoning and counterfactual reasoning. Given the fact that programming code may express causal relations more often and explicitly with conditional statements like {``}if{``}, we want to explore whether Code-LLMs acquire better causal reasoning abilities. Our experiments show that compared to text-only LLMs, Code-LLMs with code prompts are better causal reasoners. We further intervene on the prompts from different aspects, and discover that the key point is the programming structure. Code and data are available at \url{https://github.com/xxxiaol/magic-if}.",
+}
+
+@inproceedings{liu-etal-2023-learning-dynamic,
+    title = "Learning Dynamic Representations for Discourse Dependency Parsing",
+    author = "Liu, Tianyi  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.951",
+    doi = "10.18653/v1/2023.findings-emnlp.951",
+    pages = "14253--14263",
+    abstract = "Transition systems have been widely used for the discourse dependency parsing task. Existing works often characterize transition states by examining a certain number of elementary discourse units (EDUs), while neglecting the arcs obtained from the transition history. In this paper, we propose to employ GAT-based encoder to learn dynamic representations for sub-trees constructed in previous transition steps. By incorporating these representations, our model is able to retain accessibility to all parsed EDUs through the obtained arcs, thus better utilizing the structural information of the document, particularly when handling lengthy text spans with complex structures. For the discourse relation recognition task, we employ edge-featured GATs to derive better representations for EDU pairs. Experimental results show that our model can achieve state-of-the-art performance on widely adopted datasets including RST-DT, SciDTB and CDTB. Our code is available at ${https://github.com/lty-lty/Discourse-Dependency-Parsing}$.",
+}
+
+@inproceedings{chen-etal-2023-one,
+    title = "From the One, Judge of the Whole: Typed Entailment Graph Construction with Predicate Generation",
+    author = "Chen, Zhibin  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.196",
+    doi = "10.18653/v1/2023.acl-long.196",
+    pages = "3534--3551",
+    abstract = "Entailment Graphs (EGs) have been constructed based on extracted corpora as a strong and explainable form to indicate context-independent entailment relation in natural languages. However, EGs built by previous methods often suffer from the severe sparsity issues, due to limited corpora available and the long-tail phenomenon of predicate distributions. In this paper, we propose a multi-stage method, Typed Predicate-Entailment Graph Generator (TP-EGG), to tackle this problem. Given several seed predicates, TP-EGG builds the graphs by generating new predicates and detecting entailment relations among them. The generative nature of TP-EGG helps us leverage the recent advances from large pretrained language models (PLMs), while avoiding the reliance on carefully prepared corpora. Experiments on benchmark datasets show that TP-EGG can generate high-quality and scale-controllable entailment graphs, achieving significant in-domain improvement over state-of-the-art EGs and boosting the performance of down-stream inference tasks.",
+}
+
+@inproceedings{huang-etal-2023-classification,
+    title = "More than Classification: A Unified Framework for Event Temporal Relation Extraction",
+    author = "Huang, Quzhe  and
+      Hu, Yutong  and
+      Zhu, Shengqi  and
+      Feng, Yansong  and
+      Liu, Chang  and
+      Zhao, Dongyan",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.536",
+    doi = "10.18653/v1/2023.acl-long.536",
+    pages = "9631--9646",
+    abstract = "Event temporal relation extraction (ETRE) is usually formulated as a multi-label classification task, where each type of relation is simply treated as a one-hot label. This formulation ignores the meaning of relations and wipes out their intrinsic dependency. After examining the relation definitions in various ETRE tasks, we observe that all relations can be interpreted using the start and end time points of events. For example, relation \textit{Includes} could be interpreted as event 1 starting no later than event 2 and ending no earlier than event 2. In this paper, we propose a unified event temporal relation extraction framework, which transforms temporal relations into logical expressions of time points and completes the ETRE by predicting the relations between certain time point pairs. Experiments on TB-Dense and MATRES show significant improvements over a strong baseline and outperform the state-of-the-art model by 0.3{\%} on both datasets. By representing all relations in a unified framework, we can leverage the relations with sufficient data to assist the learning of other relations, thus achieving stable improvement in low-data scenarios. When the relation definitions are changed, our method can quickly adapt to the new ones by simply modifying the logic expressions that map time points to new event relations. The code is released at \url{https://github.com/AndrewZhe/A-Unified-Framework-for-ETRE}",
+}
+
+@inproceedings{wu-etal-2023-enhancing,
+    title = "Enhancing Structured Evidence Extraction for Fact Verification",
+    author = "Wu, Zirui  and
+      Hu, Nan  and
+      Feng, Yansong",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.409",
+    doi = "10.18653/v1/2023.emnlp-main.409",
+    pages = "6631--6641",
+    abstract = "Open-domain fact verification is the task of verifying claims in natural language texts against extracted evidence. FEVEROUS is a benchmark that requires extracting and integrating both unstructured and structured evidence to verify a given claim. Previous models suffer from low recall of structured evidence extraction, i.e., table extraction and cell selection. In this paper, we propose a simple but effective method to enhance the extraction of structured evidence by leveraging the row and column semantics of tables. Our method comprises two components: (i) a coarse-grained table extraction module that selects tables based on rows and columns relevant to the claim and (ii) a fine-grained cell selection graph that combines both formats of evidence and enables multi-hop and numerical reasoning. We evaluate our method on FEVEROUS and achieve an evidence recall of 60.01{\%} on the test set, which is 6.14{\%} higher than the previous state-of-the-art performance. Our results demonstrate that our method can extract tables and select cells effectively, and provide better evidence sets for verdict prediction. Our code is released at https://github.com/WilliamZR/see-st",
+}
+
+@inproceedings{hu-etal-2023-diner,
+    title = "{D}i{N}e{R}: A Large Realistic Dataset for Evaluating Compositional Generalization",
+    author = "Hu, Chengang  and
+      Liu, Xiao  and
+      Feng, Yansong",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.924",
+    doi = "10.18653/v1/2023.emnlp-main.924",
+    pages = "14938--14947",
+    abstract = "Most of the existing compositional generalization datasets are synthetically-generated, resulting in a lack of natural language variation. While there have been recent attempts to introduce non-synthetic datasets for compositional generalization, they suffer from either limited data scale or a lack of diversity in the forms of combinations. To better investigate compositional generalization with more linguistic phenomena and compositional diversity, we propose the DIsh NamE Recognition (DiNeR) task and create a large realistic Chinese dataset. Given a recipe instruction, models are required to recognize the dish name composed of diverse combinations of food, actions, and flavors. Our dataset consists of 3,811 dishes and 228,114 recipes, and involves plenty of linguistic phenomena such as anaphora, omission and ambiguity. We provide two strong baselines based on T5 and large language models (LLMs). This work contributes a challenging task, baseline methods to tackle the task, and insights into compositional generalization in the context of dish name recognition.",
+}
+
+@inproceedings{liu-etal-2022-things,
+    title = "Things not Written in Text: Exploring Spatial Commonsense from Visual Signals",
+    author = "Liu, Xiao  and
+      Yin, Da  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.168",
+    doi = "10.18653/v1/2022.acl-long.168",
+    pages = "2365--2376",
+    abstract = "Spatial commonsense, the knowledge about spatial position and relationship between objects (like the relative size of a lion and a girl, and the position of a boy relative to a bicycle when cycling), is an important part of commonsense knowledge. Although pretrained language models (PLMs) succeed in many NLP tasks, they are shown to be ineffective in spatial commonsense reasoning. Starting from the observation that images are more likely to exhibit spatial commonsense than texts, we explore whether models with visual signals learn more spatial commonsense than text-based PLMs. We propose a spatial commonsense benchmark that focuses on the relative scales of objects, and the positional relationship between people and objects under different actions. We probe PLMs and models with visual signals, including vision-language pretrained models and image synthesis models, on this benchmark, and find that image synthesis models are more capable of learning accurate and consistent spatial knowledge than other models. The spatial knowledge from image synthesis models also helps in natural language understanding tasks that require spatial commonsense.",
+}
+
+@inproceedings{chen-etal-2022-entailment,
+    title = "Entailment Graph Learning with Textual Entailment and Soft Transitivity",
+    author = "Chen, Zhibin  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.406",
+    doi = "10.18653/v1/2022.acl-long.406",
+    pages = "5899--5910",
+    abstract = "Typed entailment graphs try to learn the entailment relations between predicates from text and model them as edges between predicate nodes. The construction of entailment graphs usually suffers from severe sparsity and unreliability of distributional similarity. We propose a two-stage method, Entailment Graph with Textual Entailment and Transitivity (EGT2). EGT2 learns the local entailment relations by recognizing the textual entailment between template sentences formed by typed CCG-parsed predicates. Based on the generated local graph, EGT2 then uses three novel soft transitivity constraints to consider the logical transitivity in entailment structures. Experiments on benchmark datasets show that EGT2 can well model the transitivity in entailment graph to alleviate the sparsity, and leads to signifcant improvement over current state-of-the-art methods.",
+}
+@inproceedings{huang-etal-2022-recommend,
+    title = "Does Recommend-Revise Produce Reliable Annotations? An Analysis on Missing Instances in {D}oc{RED}",
+    author = "Huang, Quzhe  and
+      Hao, Shibo  and
+      Ye, Yuan  and
+      Zhu, Shengqi  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.432",
+    doi = "10.18653/v1/2022.acl-long.432",
+    pages = "6241--6252",
+    abstract = "DocRED is a widely used dataset for document-level relation extraction. In the large-scale annotation, a recommend-revise scheme is adopted to reduce the workload. Within this scheme, annotators are provided with candidate relation instances from distant supervision, and they then manually supplement and remove relational facts based on the recommendations. However, when comparing DocRED with a subset relabeled from scratch, we find that this scheme results in a considerable amount of false negative samples and an obvious bias towards popular entities and relations. Furthermore, we observe that the models trained on DocRED have low recall on our relabeled dataset and inherit the same bias in the training data. Through the analysis of annotators{'} behaviors, we figure out the underlying reason for the problems above: the scheme actually discourages annotators from supplementing adequate instances in the revision phase. We appeal to future research to take into consideration the issues with the recommend-revise scheme when designing new models and annotation schemes. The relabeled dataset is released at \url{https://github.com/AndrewZhe/Revisit-DocRED}, to serve as a more reliable test set of document RE models.",
+}
+
+@inproceedings{zhou-feng-2022-improve,
+    title = "Improve Discourse Dependency Parsing with Contextualized Representations",
+    author = "Zhou, Yifei  and
+      Feng, Yansong",
+    editor = "Carpuat, Marine  and
+      de Marneffe, Marie-Catherine  and
+      Meza Ruiz, Ivan Vladimir",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2022",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-naacl.173",
+    doi = "10.18653/v1/2022.findings-naacl.173",
+    pages = "2250--2261",
+    abstract = "Previous works show that discourse analysis benefits from modeling intra- and inter-sentential levels separately, where proper representations for text units of different granularities are desired to capture both the information of the text units and their relation to the context. In this paper, we propose to take advantage of transformers to encode different contextualized representations of units of different levels to dynamically capture the information required for discourse dependency analysis on intra- and inter-sentential levels. Motivated by the observation of writing patterns shared across articles to improve discourse analysis, we propose to design sequence labeling methods to take advantage of such structural information from the context that substantially outperforms traditional direct classification methods. Experiments show that our model achieves state-of-the-art results on both English and Chinese datasets.",
+}
+
+@inproceedings{an-etal-2022-charge,
+    title = "Do Charge Prediction Models Learn Legal Theory?",
+    author = "An, Zhenwei  and
+      Huang, Quzhe  and
+      Jiang, Cong  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.275",
+    doi = "10.18653/v1/2022.findings-emnlp.275",
+    pages = "3757--3768",
+    abstract = "The charge prediction task aims to predict the charge for a case given its fact description. Recent models have already achieved impressive accuracy in this task, however, little is understood about the mechanisms they use to perform the judgment.For practical applications, a charge prediction model should conform to the certain legal theory in civil law countries, as under the framework of civil law, all cases are judged according to certain local legal theories. In China, for example, nearly all criminal judges make decisions based on the Four Elements Theory (FET).In this paper, we argue that trustworthy charge prediction models should take legal theories into consideration, and standing on prior studies in model interpretation, we propose three principles for trustworthy models should follow in this task, which are sensitive, selective, and presumption of innocence.We further design a new framework to evaluate whether existing charge prediction models learn legal theories. Our findings indicate that, while existing charge prediction models meet the selective principle on a benchmark dataset, most of them are still not sensitive enough and do not satisfy the presumption of innocence. Our code and dataset are released at \url{https://github.com/ZhenweiAn/EXP_LJP}.",
+}
+
+@inproceedings{hu-etal-2022-dual,
+    title = "Dual-Channel Evidence Fusion for Fact Verification over Texts and Tables",
+    author = "Hu, Nan  and
+      Wu, Zirui  and
+      Lai, Yuxuan  and
+      Liu, Xiao  and
+      Feng, Yansong",
+    editor = "Carpuat, Marine  and
+      de Marneffe, Marie-Catherine  and
+      Meza Ruiz, Ivan Vladimir",
+    booktitle = "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.naacl-main.384",
+    doi = "10.18653/v1/2022.naacl-main.384",
+    pages = "5232--5242",
+    abstract = "Different from previous fact extraction and verification tasks that only consider evidence of a single format, FEVEROUS brings further challenges by extending the evidence format to both plain text and tables. Existing works convert all candidate evidence into either sentences or tables, thus often failing to fully capture the rich context in their original format from the converted evidence, let alone the context information lost during conversion. In this paper, we propose a Dual Channel Unified Format fact verification model (DCUF), which unifies various evidence into parallel streams, i.e., natural language sentences and a global evidence table, simultaneously. With carefully-designed evidence conversion and organization methods, DCUF makes the most of pre-trained table/language models to encourage each evidence piece to perform early and thorough interactions with other pieces in its original format. Experiments show that our model can make better use of existing pre-trained models to absorb evidence of two formats, thus outperforming previous works by a large margin. Our code and models are publicly available.",
+}
+
+@inproceedings{liu-etal-2022-counterfactual,
+    title = "Counterfactual Recipe Generation: Exploring Compositional Generalization in a Realistic Scenario",
+    author = "Liu, Xiao  and
+      Feng, Yansong  and
+      Tang, Jizhi  and
+      Hu, Chengang  and
+      Zhao, Dongyan",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.497",
+    doi = "10.18653/v1/2022.emnlp-main.497",
+    pages = "7354--7370",
+    abstract = "People can acquire knowledge in an unsupervised manner by reading, and compose the knowledge to make novel combinations. In this paper, we investigate whether pretrained language models can perform compositional generalization in a realistic setting: recipe generation. We design the counterfactual recipe generation task, which asks models to modify a base recipe according to the change of an ingredient. This task requires compositional generalization at two levels: the surface level of incorporating the new ingredient into the base recipe, and the deeper level of adjusting actions related to the changing ingredient. We collect a large-scale recipe dataset in Chinese for models to learn culinary knowledge, and a subset of action-level fine-grained annotations for evaluation.We finetune pretrained language models on the recipe corpus, and use unsupervised counterfactual generation methods to generate modified recipes.Results show that existing models have difficulties in modifying the ingredients while preserving the original text style, and often miss actions that need to be adjusted. Although pretrained language models can generate fluent recipe texts, they fail to truly learn and use the culinary knowledge in a compositional way. Code and data are available at https://github.com/xxxiaol/counterfactual-recipe-generation.",
+}
+
+@inproceedings{lai-etal-2021-machine,
+    title = "Why Machine Reading Comprehension Models Learn Shortcuts?",
+    author = "Lai, Yuxuan  and
+      Zhang, Chen  and
+      Feng, Yansong  and
+      Huang, Quzhe  and
+      Zhao, Dongyan",
+    editor = "Zong, Chengqing  and
+      Xia, Fei  and
+      Li, Wenjie  and
+      Navigli, Roberto",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-acl.85",
+    doi = "10.18653/v1/2021.findings-acl.85",
+    pages = "989--1002",
+}
+
+@inproceedings{zhang-etal-2021-extract-integrate,
+    title = "Extract, Integrate, Compete: Towards Verification Style Reading Comprehension",
+    author = "Zhang, Chen  and
+      Lai, Yuxuan  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.255",
+    doi = "10.18653/v1/2021.findings-emnlp.255",
+    pages = "2976--2986",
+    abstract = "In this paper, we present a new verification style reading comprehension dataset named VGaokao from Chinese Language tests of Gaokao. Different from existing efforts, the new dataset is originally designed for native speakers{'} evaluation, thus requiring more advanced language understanding skills. To address the challenges in VGaokao, we propose a novel Extract-Integrate-Compete approach, which iteratively selects complementary evidence with a novel query updating mechanism and adaptively distills supportive evidence, followed by a pairwise competition to push models to learn the subtle difference among similar text pieces. Experiments show that our methods outperform various baselines on VGaokao with retrieved complementary evidence, while having the merits of efficiency and explainability. Our dataset and code are released for further research.",
+}
+
+@inproceedings{tao-etal-2021-learning,
+    title = "Learning to Organize a Bag of Words into Sentences with Neural Networks: An Empirical Study",
+    author = "Tao, Chongyang  and
+      Gao, Shen  and
+      Li, Juntao  and
+      Feng, Yansong  and
+      Zhao, Dongyan  and
+      Yan, Rui",
+    editor = "Toutanova, Kristina  and
+      Rumshisky, Anna  and
+      Zettlemoyer, Luke  and
+      Hakkani-Tur, Dilek  and
+      Beltagy, Iz  and
+      Bethard, Steven  and
+      Cotterell, Ryan  and
+      Chakraborty, Tanmoy  and
+      Zhou, Yichao",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.134",
+    doi = "10.18653/v1/2021.naacl-main.134",
+    pages = "1682--1691",
+    abstract = "Sequential information, a.k.a., orders, is assumed to be essential for processing a sequence with recurrent neural network or convolutional neural network based encoders. However, is it possible to encode natural languages without orders? Given a bag of words from a disordered sentence, humans may still be able to understand what those words mean by reordering or reconstructing them. Inspired by such an intuition, in this paper, we perform a study to investigate how {``}order{''} information takes effects in natural language learning. By running comprehensive comparisons, we quantitatively compare the ability of several representative neural models to organize sentences from a bag of words under three typical scenarios, and summarize some empirical findings and challenges, which can shed light on future research on this line of work.",
+}
+
+@inproceedings{lai-etal-2021-lattice,
+    title = "Lattice-{BERT}: Leveraging Multi-Granularity Representations in {C}hinese Pre-trained Language Models",
+    author = "Lai, Yuxuan  and
+      Liu, Yijia  and
+      Feng, Yansong  and
+      Huang, Songfang  and
+      Zhao, Dongyan",
+    editor = "Toutanova, Kristina  and
+      Rumshisky, Anna  and
+      Zettlemoyer, Luke  and
+      Hakkani-Tur, Dilek  and
+      Beltagy, Iz  and
+      Bethard, Steven  and
+      Cotterell, Ryan  and
+      Chakraborty, Tanmoy  and
+      Zhou, Yichao",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.137",
+    doi = "10.18653/v1/2021.naacl-main.137",
+    pages = "1716--1731",
+    abstract = "Chinese pre-trained language models usually process text as a sequence of characters, while ignoring more coarse granularity, e.g., words. In this work, we propose a novel pre-training paradigm for Chinese {---} Lattice-BERT, which explicitly incorporates word representations along with characters, thus can model a sentence in a multi-granularity manner. Specifically, we construct a lattice graph from the characters and words in a sentence and feed all these text units into transformers. We design a lattice position attention mechanism to exploit the lattice structures in self-attention layers. We further propose a masked segment prediction task to push the model to learn from rich but redundant information inherent in lattices, while avoiding learning unexpected tricks. Experiments on 11 Chinese natural language understanding tasks show that our model can bring an average increase of 1.5{\%} under the 12-layer setting, which achieves new state-of-the-art among base-size models on the CLUE benchmarks. Further analysis shows that Lattice-BERT can harness the lattice structures, and the improvement comes from the exploration of redundant information and multi-granularity representations. Our code will be available at \url{https://github.com/alibaba/pretrained-language-models/LatticeBERT}.",
+}
+
+@inproceedings{liu-etal-2021-everything,
+    title = "Everything Has a Cause: Leveraging Causal Inference in Legal Text Analysis",
+    author = "Liu, Xiao  and
+      Yin, Da  and
+      Feng, Yansong  and
+      Wu, Yuting  and
+      Zhao, Dongyan",
+    editor = "Toutanova, Kristina  and
+      Rumshisky, Anna  and
+      Zettlemoyer, Luke  and
+      Hakkani-Tur, Dilek  and
+      Beltagy, Iz  and
+      Bethard, Steven  and
+      Cotterell, Ryan  and
+      Chakraborty, Tanmoy  and
+      Zhou, Yichao",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.155",
+    doi = "10.18653/v1/2021.naacl-main.155",
+    pages = "1928--1941",
+    abstract = "Causal inference is the process of capturing cause-effect relationship among variables. Most existing works focus on dealing with structured data, while mining causal relationship among factors from unstructured data, like text, has been less examined, but is of great importance, especially in the legal domain. In this paper, we propose a novel Graph-based Causal Inference (GCI) framework, which builds causal graphs from fact descriptions without much human involvement and enables causal inference to facilitate legal practitioners to make proper decisions. We evaluate the framework on a challenging similar charge disambiguation task. Experimental results show that GCI can capture the nuance from fact descriptions among multiple confusing charges and provide explainable discrimination, especially in few-shot settings. We also observe that the causal knowledge contained in GCI can be effectively injected into powerful neural networks for better performance and interpretability.",
+}
+
+@inproceedings{huang-etal-2021-exploring,
+    title = "Exploring Distantly-Labeled Rationales in Neural Network Models",
+    author = "Huang, Quzhe  and
+      Zhu, Shengqi  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Zong, Chengqing  and
+      Xia, Fei  and
+      Li, Wenjie  and
+      Navigli, Roberto",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.433",
+    doi = "10.18653/v1/2021.acl-long.433",
+    pages = "5571--5582",
+    abstract = "Recent studies strive to incorporate various human rationales into neural networks to improve model performance, but few pay attention to the quality of the rationales. Most existing methods distribute their models{'} focus to distantly-labeled rationale words entirely and equally, while ignoring the potential important non-rationale words and not distinguishing the importance of different rationale words. In this paper, we propose two novel auxiliary loss functions to make better use of distantly-labeled rationales, which encourage models to maintain their focus on important words beyond labeled rationales (PINs) and alleviate redundant training on non-helpful rationales (NoIRs). Experiments on two representative classification tasks show that our proposed methods can push a classification model to effectively learn crucial clues from non-perfect rationales while maintaining the ability to spread its focus to other unlabeled important words, thus significantly outperform existing methods.",
+}
+
+@inproceedings{huang-etal-2021-three,
+    title = "Three Sentences Are All You Need: Local Path Enhanced Document Relation Extraction",
+    author = "Huang, Quzhe  and
+      Zhu, Shengqi  and
+      Feng, Yansong  and
+      Ye, Yuan  and
+      Lai, Yuxuan  and
+      Zhao, Dongyan",
+    editor = "Zong, Chengqing  and
+      Xia, Fei  and
+      Li, Wenjie  and
+      Navigli, Roberto",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-short.126",
+    doi = "10.18653/v1/2021.acl-short.126",
+    pages = "998--1004",
+    abstract = "Document-level Relation Extraction (RE) is a more challenging task than sentence RE as it often requires reasoning over multiple sentences. Yet, human annotators usually use a small number of sentences to identify the relationship between a given entity pair. In this paper, we present an embarrassingly simple but effective method to heuristically select evidence sentences for document-level RE, which can be easily combined with BiLSTM to achieve good performance on benchmark datasets, even better than fancy graph neural network based methods. We have released our code at \url{https://github.com/AndrewZhe/Three-Sentences-Are-All-You-Need}.",
+}
+
+@inproceedings{pan-etal-2020-semantic,
+    title = "Semantic Graphs for Generating Deep Questions",
+    author = "Pan, Liangming  and
+      Xie, Yuxi  and
+      Feng, Yansong  and
+      Chua, Tat-Seng  and
+      Kan, Min-Yen",
+    editor = "Jurafsky, Dan  and
+      Chai, Joyce  and
+      Schluter, Natalie  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.135",
+    doi = "10.18653/v1/2020.acl-main.135",
+    pages = "1463--1475",
+    abstract = "This paper proposes the problem of Deep Question Generation (DQG), which aims to generate complex questions that require reasoning over multiple pieces of information about the input passage. In order to capture the global structure of the document and facilitate reasoning, we propose a novel framework that first constructs a semantic-level graph for the input document and then encodes the semantic graph by introducing an attention-based GGNN (Att-GGNN). Afterward, we fuse the document-level and graph-level representations to perform joint training of content selection and question decoding. On the HotpotQA deep-question centric dataset, our model greatly improves performance over questions requiring reasoning over multiple facts, leading to state-of-the-art performance. The code is publicly available at \url{https://github.com/WING-NUS/SG-Deep-Question-Generation}.",
+}
+
+@inproceedings{wu-etal-2020-neighborhood,
+    title = "Neighborhood Matching Network for Entity Alignment",
+    author = "Wu, Yuting  and
+      Liu, Xiao  and
+      Feng, Yansong  and
+      Wang, Zheng  and
+      Zhao, Dongyan",
+    editor = "Jurafsky, Dan  and
+      Chai, Joyce  and
+      Schluter, Natalie  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.578",
+    doi = "10.18653/v1/2020.acl-main.578",
+    pages = "6477--6487",
+    abstract = "Structural heterogeneity between knowledge graphs is an outstanding challenge for entity alignment. This paper presents Neighborhood Matching Network (NMN), a novel entity alignment framework for tackling the structural heterogeneity challenge. NMN estimates the similarities between entities to capture both the topological structure and the neighborhood difference. It provides two innovative components for better learning representations for entity alignment. It first uses a novel graph sampling method to distill a discriminative neighborhood for each entity. It then adopts a cross-graph neighborhood matching module to jointly encode the neighborhood difference for a given entity pair. Such strategies allow NMN to effectively construct matching-oriented entity representations while ignoring noisy neighbors that have a negative impact on the alignment task. Extensive experiments performed on three entity alignment datasets show that NMN can well estimate the neighborhood similarity in more tough cases and significantly outperforms 12 previous state-of-the-art methods.",
+}
+
+@inproceedings{xie-etal-2020-exploring,
+    title = "Exploring Question-Specific Rewards for Generating Deep Questions",
+    author = "Xie, Yuxi  and
+      Pan, Liangming  and
+      Wang, Dongzhe  and
+      Kan, Min-Yen  and
+      Feng, Yansong",
+    editor = "Scott, Donia  and
+      Bel, Nuria  and
+      Zong, Chengqing",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2020.coling-main.228",
+    doi = "10.18653/v1/2020.coling-main.228",
+    pages = "2534--2546",
+    abstract = "Recent question generation (QG) approaches often utilize the sequence-to-sequence framework (Seq2Seq) to optimize the log likelihood of ground-truth questions using teacher forcing. However, this training objective is inconsistent with actual question quality, which is often reflected by certain global properties such as whether the question can be answered by the document. As such, we directly optimize for QG-specific objectives via reinforcement learning to improve question quality. We design three different rewards that target to improve the fluency, relevance, and answerability of generated questions. We conduct both automatic and human evaluations in addition to thorough analysis to explore the effect of each QG-specific reward. We find that optimizing on question-specific rewards generally leads to better performance in automatic evaluation metrics. However, only the rewards that correlate well with human judgement (e.g., relevance) lead to real improvement in question quality. Optimizing for the others, especially answerability, introduces incorrect bias to the model, resulting in poorer question quality. The code is publicly available at \url{https://github.com/YuxiXie/RL-for-Question-Generation}.",
+}
+
+@inproceedings{tang-etal-2020-understanding-procedural,
+    title = "Understanding Procedural Text using Interactive Entity Networks",
+    author = "Tang, Jizhi  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Webber, Bonnie  and
+      Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.591",
+    doi = "10.18653/v1/2020.emnlp-main.591",
+    pages = "7281--7290",
+    abstract = "The task of procedural text comprehension aims to understand the dynamic nature of entities/objects in a process. Here, the key is to track how the entities interact with each other and how their states are changing along the procedure. Recent efforts have made great progress to track multiple entities in a procedural text, but usually treat each entity separately and ignore the fact that there are often multiple entities interacting with each other during one process, some of which are even explicitly mentioned. In this paper, we propose a novel Interactive Entity Network (IEN), which is a recurrent network with memory equipped cells for state tracking. In each IEN cell, we maintain different attention matrices through specific memories to model different types of entity interactions. Importantly, we can update these memories in a sequential manner so as to explore the causal relationship between entity actions and subsequent state changes. We evaluate our model on a benchmark dataset, and the results show that IEN outperforms state-of-the-art models by precisely capturing the interactions of multiple entities and explicitly leverage the relationship between entity interactions and subsequent state changes.",
+}
+
+@inproceedings{yu-etal-2020-towards,
+    title = "Towards Context-Aware Code Comment Generation",
+    author = "Yu, Xiaohan  and
+      Huang, Quzhe  and
+      Wang, Zheng  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.findings-emnlp.350",
+    doi = "10.18653/v1/2020.findings-emnlp.350",
+    pages = "3938--3947",
+    abstract = "Code comments are vital for software maintenance and comprehension, but many software projects suffer from the lack of meaningful and up-to-date comments in practice. This paper presents a novel approach to automatically generate code comments at a function level by targeting object-oriented programming languages. Unlike prior work that only uses information locally available within the target function, our approach leverages broader contextual information by considering all other functions of the same class. To propagate and integrate information beyond the scope of the target function, we design a novel learning framework based on the bidirectional gated recurrent unit and a graph attention network with a pointer mechanism. We apply our approach to produce code comments for Java methods and compare it against four strong baseline methods. Experimental results show that our approach outperforms most methods by a large margin and achieves a comparable result with the state-of-the-art method.",
+}
+
+@inproceedings{wu-etal-2019-jointly,
+    title = "Jointly Learning Entity and Relation Representations for Entity Alignment",
+    author = "Wu, Yuting  and
+      Liu, Xiao  and
+      Feng, Yansong  and
+      Wang, Zheng  and
+      Zhao, Dongyan",
+    editor = "Inui, Kentaro  and
+      Jiang, Jing  and
+      Ng, Vincent  and
+      Wan, Xiaojun",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1023",
+    doi = "10.18653/v1/D19-1023",
+    pages = "240--249",
+    abstract = "Entity alignment is a viable means for integrating heterogeneous knowledge among different knowledge graphs (KGs). Recent developments in the field often take an embedding-based approach to model the structural information of KGs so that entity alignment can be easily performed in the embedding space. However, most existing works do not explicitly utilize useful relation representations to assist in entity alignment, which, as we will show in the paper, is a simple yet effective way for improving entity alignment. This paper presents a novel joint learning framework for entity alignment. At the core of our approach is a Graph Convolutional Network (GCN) based framework for learning both entity and relation representations. Rather than relying on pre-aligned relation seeds to learn relation representations, we first approximate them using entity embeddings learned by the GCN. We then incorporate the relation approximation into entities to iteratively learn better representations for both. Experiments performed on three real-world cross-lingual datasets show that our approach substantially outperforms state-of-the-art entity alignment methods.",
+}
+
+@inproceedings{li-etal-2019-sampling,
+    title = "Sampling Matters! An Empirical Study of Negative Sampling Strategies for Learning of Matching Models in Retrieval-based Dialogue Systems",
+    author = "Li, Jia  and
+      Tao, Chongyang  and
+      Wu, Wei  and
+      Feng, Yansong  and
+      Zhao, Dongyan  and
+      Yan, Rui",
+    editor = "Inui, Kentaro  and
+      Jiang, Jing  and
+      Ng, Vincent  and
+      Wan, Xiaojun",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1128",
+    doi = "10.18653/v1/D19-1128",
+    pages = "1291--1296",
+    abstract = "We study how to sample negative examples to automatically construct a training set for effective model learning in retrieval-based dialogue systems. Following an idea of dynamically adapting negative examples to matching models in learning, we consider four strategies including minimum sampling, maximum sampling, semi-hard sampling, and decay-hard sampling. Empirical studies on two benchmarks with three matching models indicate that compared with the widely used random sampling strategy, although the first two strategies lead to performance drop, the latter two ones can bring consistent improvement to the performance of all the models on both benchmarks.",
+}
+
+@inproceedings{tang-etal-2019-learning,
+    title = "Learning to Update Knowledge Graphs by Reading News",
+    author = "Tang, Jizhi  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Inui, Kentaro  and
+      Jiang, Jing  and
+      Ng, Vincent  and
+      Wan, Xiaojun",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1265",
+    doi = "10.18653/v1/D19-1265",
+    pages = "2632--2641",
+    abstract = "News streams contain rich up-to-date information which can be used to update knowledge graphs (KGs). Most current text-based KG updating methods rely on elaborately designed information extraction (IE) systems and carefully crafted rules, which are often domain-specific and hard to maintain. Besides, such methods often hardly pay enough attention to the implicit information that lies underneath texts. In this paper, we propose a novel neural network method, GUpdater, to tackle these problems. GUpdater is built upon graph neural networks (GNNs) with a text-based attention mechanism to guide the updating message passing through the KG structures. Experiments on a real-world KG updating dataset show that our model can effectively broadcast the news information to the KG structures and perform necessary link-adding or link-deleting operations to ensure the KG up-to-date according to news snippets.",
+}
+
+@inproceedings{ma-etal-2019-easy,
+    title = "Easy First Relation Extraction with Information Redundancy",
+    author = "Ma, Shuai  and
+      Wang, Gang  and
+      Feng, Yansong  and
+      Huai, Jinpeng",
+    editor = "Inui, Kentaro  and
+      Jiang, Jing  and
+      Ng, Vincent  and
+      Wan, Xiaojun",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1398",
+    doi = "10.18653/v1/D19-1398",
+    pages = "3851--3861",
+    abstract = "Many existing relation extraction (RE) models make decisions globally using integer linear programming (ILP). However, it is nontrivial to make use of integer linear programming as a blackbox solver for RE. Its cost of time and memory may become unacceptable with the increase of data scale, and redundant information needs to be encoded cautiously for ILP. In this paper, we propose an easy first approach for relation extraction with information redundancies, embedded in the results produced by local sentence level extractors, during which conflict decisions are resolved with domain and uniqueness constraints. Information redundancies are leveraged to support both easy first collective inference for easy decisions in the first stage and ILP for hard decisions in a subsequent stage. Experimental study shows that our approach improves the efficiency and accuracy of RE, and outperforms both ILP and neural network-based methods.",
+}
+
+
+@inproceedings{yang-etal-2019-generating,
+    title = "Generating Classical {C}hinese Poems from Vernacular {C}hinese",
+    author = "Yang, Zhichao  and
+      Cai, Pengshan  and
+      Feng, Yansong  and
+      Li, Fei  and
+      Feng, Weijiang  and
+      Chiu, Elena Suet-Ying  and
+      Yu, Hong",
+    editor = "Inui, Kentaro  and
+      Jiang, Jing  and
+      Ng, Vincent  and
+      Wan, Xiaojun",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1637",
+    doi = "10.18653/v1/D19-1637",
+    pages = "6155--6164",
+    abstract = "Classical Chinese poetry is a jewel in the treasure house of Chinese culture. Previous poem generation models only allow users to employ keywords to interfere the meaning of generated poems, leaving the dominion of generation to the model. In this paper, we propose a novel task of generating classical Chinese poems from vernacular, which allows users to have more control over the semantic of generated poems. We adapt the approach of unsupervised machine translation (UMT) to our task. We use segmentation-based padding and reinforcement learning to address under-translation and over-translation respectively. According to experiments, our approach significantly improve the perplexity and BLEU compared with typical UMT models. Furthermore, we explored guidelines on how to write the input vernacular to generate better poems. Human evaluation showed our approach can generate high-quality poems which are comparable to amateur poems.",
+}
+
+@inproceedings{xu-etal-2019-enhancing,
+    title = "Enhancing Key-Value Memory Neural Networks for Knowledge Based Question Answering",
+    author = "Xu, Kun  and
+      Lai, Yuxuan  and
+      Feng, Yansong  and
+      Wang, Zhiguo",
+    editor = "Burstein, Jill  and
+      Doran, Christy  and
+      Solorio, Thamar",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1301",
+    doi = "10.18653/v1/N19-1301",
+    pages = "2937--2947",
+    abstract = "Traditional Key-value Memory Neural Networks (KV-MemNNs) are proved to be effective to support shallow reasoning over a collection of documents in domain specific Question Answering or Reading Comprehension tasks. However, extending KV-MemNNs to Knowledge Based Question Answering (KB-QA) is not trivia, which should properly decompose a complex question into a sequence of queries against the memory, and update the query representations to support multi-hop reasoning over the memory. In this paper, we propose a novel mechanism to enable conventional KV-MemNNs models to perform interpretable reasoning for complex questions. To achieve this, we design a new query updating strategy to mask previously-addressed memory information from the query representations, and introduce a novel STOP strategy to avoid invalid or repeated memory reading without strong annotation signals. This also enables KV-MemNNs to produce structured queries and work in a semantic parsing fashion. Experimental results on benchmark datasets show that our solution, trained with question-answer pairs only, can provide conventional KV-MemNNs models with better reasoning abilities on complex questions, and achieve state-of-art performances.",
+}
+
+@inproceedings{xu-etal-2019-cross-lingual,
+    title = "Cross-lingual Knowledge Graph Alignment via Graph Matching Neural Network",
+    author = "Xu, Kun  and
+      Wang, Liwei  and
+      Yu, Mo  and
+      Feng, Yansong  and
+      Song, Yan  and
+      Wang, Zhiguo  and
+      Yu, Dong",
+    editor = "Korhonen, Anna  and
+      Traum, David  and
+      M{\`a}rquez, Llu{\'\i}s",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1304",
+    doi = "10.18653/v1/P19-1304",
+    pages = "3156--3161",
+    abstract = "Previous cross-lingual knowledge graph (KG) alignment studies rely on entity embeddings derived only from monolingual KG structural information, which may fail at matching entities that have different facts in two KGs. In this paper, we introduce the topic entity graph, a local sub-graph of an entity, to represent entities with their contextual information in KG. From this view, the KB-alignment task can be formulated as a graph matching problem; and we further propose a graph-attention based solution, which first matches all entities in two topic entity graphs, and then jointly model the local matching information to derive a graph-level matching vector. Experiments show that our model outperforms previous state-of-the-art methods by a large margin.",
+}
+
+@inproceedings{feng-etal-2019-learning,
+    title = "Learning a Matching Model with Co-teaching for Multi-turn Response Selection in Retrieval-based Dialogue Systems",
+    author = "Feng, Jiazhan  and
+      Tao, Chongyang  and
+      Wu, Wei  and
+      Feng, Yansong  and
+      Zhao, Dongyan  and
+      Yan, Rui",
+    editor = "Korhonen, Anna  and
+      Traum, David  and
+      M{\`a}rquez, Llu{\'\i}s",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1370",
+    doi = "10.18653/v1/P19-1370",
+    pages = "3805--3815",
+    abstract = "We study learning of a matching model for response selection in retrieval-based dialogue systems. The problem is equally important with designing the architecture of a model, but is less explored in existing literature. To learn a robust matching model from noisy training data, we propose a general co-teaching framework with three specific teaching strategies that cover both teaching with loss functions and teaching with data curriculum. Under the framework, we simultaneously learn two matching models with independent training sets. In each iteration, one model transfers the knowledge learned from its training set to the other model, and at the same time receives the guide from the other model on how to overcome noise in training. Through being both a teacher and a student, the two models learn from each other and get improved together. Evaluation results on two public data sets indicate that the proposed learning approach can generally and significantly improve the performance of existing matching models.",
+}
+
+
+@inproceedings{fu-feng-2018-natural,
+    title = "Natural Answer Generation with Heterogeneous Memory",
+    author = "Fu, Yao  and
+      Feng, Yansong",
+    editor = "Walker, Marilyn  and
+      Ji, Heng  and
+      Stent, Amanda",
+    booktitle = "Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)",
+    month = jun,
+    year = "2018",
+    address = "New Orleans, Louisiana",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N18-1017",
+    doi = "10.18653/v1/N18-1017",
+    pages = "185--195",
+    abstract = "Memory augmented encoder-decoder framework has achieved promising progress for natural language generation tasks. Such frameworks enable a decoder to retrieve from a memory during generation. However, less research has been done to take care of the memory contents from different sources, which are often of heterogeneous formats. In this work, we propose a novel attention mechanism to encourage the decoder to actively interact with the memory by taking its heterogeneity into account. Our solution attends across the generated history and memory to explicitly avoid repetition, and introduce related knowledge to enrich our generated sentences. Experiments on the answer sentence generation task show that our method can effectively explore heterogeneous memory to produce readable and meaningful answer sentences while maintaining high coverage for given answer information.",
+}
+
+@inproceedings{xu-etal-2018-sql,
+    title = "{SQL}-to-Text Generation with Graph-to-Sequence Model",
+    author = "Xu, Kun  and
+      Wu, Lingfei  and
+      Wang, Zhiguo  and
+      Feng, Yansong  and
+      Sheinin, Vadim",
+    editor = "Riloff, Ellen  and
+      Chiang, David  and
+      Hockenmaier, Julia  and
+      Tsujii, Jun{'}ichi",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D18-1112",
+    doi = "10.18653/v1/D18-1112",
+    pages = "931--936",
+    abstract = "Previous work approaches the SQL-to-text generation task using vanilla Seq2Seq models, which may not fully capture the inherent graph-structured information in SQL query. In this paper, we propose a graph-to-sequence model to encode the global structure information into node embeddings. This model can effectively learn the correlation between the SQL query pattern and its interpretation. Experimental results on the WikiSQL dataset and Stackoverflow dataset show that our model outperforms the Seq2Seq and Tree2Seq baselines, achieving the state-of-the-art performance.",
+}
+
+@inproceedings{fan-etal-2018-multi,
+    title = "Multi-grained Attention Network for Aspect-Level Sentiment Classification",
+    author = "Fan, Feifan  and
+      Feng, Yansong  and
+      Zhao, Dongyan",
+    editor = "Riloff, Ellen  and
+      Chiang, David  and
+      Hockenmaier, Julia  and
+      Tsujii, Jun{'}ichi",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D18-1380",
+    doi = "10.18653/v1/D18-1380",
+    pages = "3433--3442",
+    abstract = "We propose a novel multi-grained attention network (MGAN) model for aspect level sentiment classification. Existing approaches mostly adopt coarse-grained attention mechanism, which may bring information loss if the aspect has multiple words or larger context. We propose a fine-grained attention mechanism, which can capture the word-level interaction between aspect and context. And then we leverage the fine-grained and coarse-grained attention mechanisms to compose the MGAN framework. Moreover, unlike previous works which train each aspect with its context separately, we design an aspect alignment loss to depict the aspect-level interactions among the aspects that have the same context. We evaluate the proposed approach on three datasets: laptop and restaurant are from SemEval 2014, and the last one is a twitter dataset. Experimental results show that the multi-grained attention network consistently outperforms the state-of-the-art methods on all three datasets. We also conduct experiments to evaluate the effectiveness of aspect alignment loss, which indicates the aspect-level interactions can bring extra useful information and further improve the performance.",
+}
+@inproceedings{luo-etal-2018-marrying,
+    title = "Marrying Up Regular Expressions with Neural Networks: A Case Study for Spoken Language Understanding",
+    author = "Luo, Bingfeng  and
+      Feng, Yansong  and
+      Wang, Zheng  and
+      Huang, Songfang  and
+      Yan, Rui  and
+      Zhao, Dongyan",
+    editor = "Gurevych, Iryna  and
+      Miyao, Yusuke",
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P18-1194",
+    doi = "10.18653/v1/P18-1194",
+    pages = "2083--2093",
+    abstract = "The success of many natural language processing (NLP) tasks is bound by the number and quality of annotated data, but there is often a shortage of such training data. In this paper, we ask the question: {``}Can we combine a neural network (NN) with regular expressions (RE) to improve supervised learning for NLP?{''}. In answer, we develop novel methods to exploit the rich expressiveness of REs at different levels within a NN, showing that the combination significantly enhances the learning effectiveness when a small number of training examples are available. We evaluate our approach by applying it to spoken language understanding for intent detection and slot filling. Experimental results show that our approach is highly effective in exploiting the available training data, giving a clear boost to the RE-unaware NN.",
+}
+
+@inproceedings{jia-etal-2018-modeling,
+    title = "Modeling discourse cohesion for discourse parsing via memory network",
+    author = "Jia, Yanyan  and
+      Ye, Yuan  and
+      Feng, Yansong  and
+      Lai, Yuxuan  and
+      Yan, Rui  and
+      Zhao, Dongyan",
+    editor = "Gurevych, Iryna  and
+      Miyao, Yusuke",
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P18-2070",
+    doi = "10.18653/v1/P18-2070",
+    pages = "438--443",
+    abstract = "Identifying long-span dependencies between discourse units is crucial to improve discourse parsing performance. Most existing approaches design sophisticated features or exploit various off-the-shelf tools, but achieve little success. In this paper, we propose a new transition-based discourse parser that makes use of memory networks to take discourse cohesion into account. The automatically captured discourse cohesion benefits discourse parsing, especially for long span scenarios. Experiments on the RST discourse treebank show that our method outperforms traditional featured based methods, and the memory based discourse cohesion can improve the overall parsing performance significantly.",
+}
+
 @inproceedings{luo-etal-2017-learning-noise,
     title = "Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix",
     author = "Luo, Bingfeng  and
