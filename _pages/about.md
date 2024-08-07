@@ -2,24 +2,18 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Beijing, China
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>😅</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am an associate professor in the [Wangxuan Institute of Computer Technology](http://www.wict.pku.edu.cn) (former ICST) at [Peking University](http://www.pku.edu.cn/). I am affiliated with the group of Web Information Processing. Before that, I worked with [Prof. Mirella Lapata](https://homepages.inf.ed.ac.uk/mlap) and obtained my PhD from [ILCC](https://web.inf.ed.ac.uk/ilcc), [School of Informatics](https://www.ed.ac.uk/informatics) at [the University of Edinburgh](https://www.ed.ac.uk/). Prior to Edinburgh, I worked with Prof. Jufu Feng on pattern recognition at Peking University.
