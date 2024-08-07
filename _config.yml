@@ -310,8 +310,8 @@ jekyll-minifier:
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Feng]
+  first_name: [Yansong]
 
   style: apa
   locale: en
