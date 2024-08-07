@@ -3,25 +3,7 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
 
-
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
 
 
 @inproceedings{li-feng-2024-motion,
@@ -333,6 +315,29 @@
     abstract = "Most of the existing compositional generalization datasets are synthetically-generated, resulting in a lack of natural language variation. While there have been recent attempts to introduce non-synthetic datasets for compositional generalization, they suffer from either limited data scale or a lack of diversity in the forms of combinations. To better investigate compositional generalization with more linguistic phenomena and compositional diversity, we propose the DIsh NamE Recognition (DiNeR) task and create a large realistic Chinese dataset. Given a recipe instruction, models are required to recognize the dish name composed of diverse combinations of food, actions, and flavors. Our dataset consists of 3,811 dishes and 228,114 recipes, and involves plenty of linguistic phenomena such as anaphora, omission and ambiguity. We provide two strong baselines based on T5 and large language models (LLMs). This work contributes a challenging task, baseline methods to tackle the task, and insights into compositional generalization in the context of dish name recognition.",
 }
 
+@inproceedings{tao2023can,
+  title={Can bert refrain from forgetting on sequential tasks? a probing study},
+  author={Tao, Mingxu and Feng, Yansong and Zhao, Dongyan},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2023}
+}
+
+@inproceedings{tao2023frustratingly,
+  title={A frustratingly easy improvement for position embeddings via random padding},
+  author={Tao, Mingxu and Feng, Yansong and Zhao, Dongyan},
+  booktitle={CCF International Conference on Natural Language Processing and Chinese Computing},
+  pages={301--313},
+  year={2023},
+  organization={Springer Nature Switzerland Cham}
+}
+
+@article{huang2023lawyer,
+  title={Lawyer llama technical report},
+  author={Huang, Quzhe and Tao, Mingxu and Zhang, Chen and An, Zhenwei and Jiang, Cong and Chen, Zhibin and Wu, Zirui and Feng, Yansong},
+  journal={arXiv preprint arXiv:2305.15062},
+  year={2023}
+}
+
 @inproceedings{liu-etal-2022-things,
     title = "Things not Written in Text: Exploring Spatial Commonsense from Visual Signals",
     author = "Liu, Xiao  and
@@ -472,6 +477,17 @@
     doi = "10.18653/v1/2022.emnlp-main.497",
     pages = "7354--7370",
     abstract = "People can acquire knowledge in an unsupervised manner by reading, and compose the knowledge to make novel combinations. In this paper, we investigate whether pretrained language models can perform compositional generalization in a realistic setting: recipe generation. We design the counterfactual recipe generation task, which asks models to modify a base recipe according to the change of an ingredient. This task requires compositional generalization at two levels: the surface level of incorporating the new ingredient into the base recipe, and the deeper level of adjusting actions related to the changing ingredient. We collect a large-scale recipe dataset in Chinese for models to learn culinary knowledge, and a subset of action-level fine-grained annotations for evaluation.We finetune pretrained language models on the recipe corpus, and use unsupervised counterfactual generation methods to generate modified recipes.Results show that existing models have difficulties in modifying the ingredients while preserving the original text style, and often miss actions that need to be adjusted. Although pretrained language models can generate fluent recipe texts, they fail to truly learn and use the culinary knowledge in a compositional way. Code and data are available at https://github.com/xxxiaol/counterfactual-recipe-generation.",
+}
+
+@article{chen2022integrating,
+  title={Integrating manifold knowledge for global entity linking with heterogeneous graphs},
+  author={Chen, Zhibin and Wu, Yuting and Feng, Yansong and Zhao, Dongyan},
+  journal={Data Intelligence},
+  volume={4},
+  number={1},
+  pages={20--40},
+  year={2022},
+  publisher={MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…}
 }
 
 @inproceedings{lai-etal-2021-machine,
@@ -641,6 +657,15 @@
     pages = "998--1004",
     abstract = "Document-level Relation Extraction (RE) is a more challenging task than sentence RE as it often requires reasoning over multiple sentences. Yet, human annotators usually use a small number of sentences to identify the relationship between a given entity pair. In this paper, we present an embarrassingly simple but effective method to heuristically select evidence sentences for document-level RE, which can be easily combined with BiLSTM to achieve good performance on benchmark datasets, even better than fancy graph neural network based methods. We have released our code at \url{https://github.com/AndrewZhe/Three-Sentences-Are-All-You-Need}.",
 }
+@article{zhang2021review,
+  title={A review of deep learning in question answering over knowledge bases},
+  author={Zhang, Chen and Lai, Yuxuan and Feng, Yansong and Zhao, Dongyan},
+  journal={AI Open},
+  volume={2},
+  pages={205--215},
+  year={2021},
+  publisher={Elsevier}
+}
 
 @inproceedings{pan-etal-2020-semantic,
     title = "Semantic Graphs for Generating Deep Questions",
@@ -746,6 +771,90 @@
     doi = "10.18653/v1/2020.findings-emnlp.350",
     pages = "3938--3947",
     abstract = "Code comments are vital for software maintenance and comprehension, but many software projects suffer from the lack of meaningful and up-to-date comments in practice. This paper presents a novel approach to automatically generate code comments at a function level by targeting object-oriented programming languages. Unlike prior work that only uses information locally available within the target function, our approach leverages broader contextual information by considering all other functions of the same class. To propagate and integrate information beyond the scope of the target function, we design a novel learning framework based on the bidirectional gated recurrent unit and a graph attention network with a pointer mechanism. We apply our approach to produce code comments for Java methods and compare it against four strong baseline methods. Experimental results show that our approach outperforms most methods by a large margin and achieves a comparable result with the state-of-the-art method.",
+}
+
+@article{wang2020combining,
+  title={Combining graph-based learning with automated data collection for code vulnerability detection},
+  author={Wang, Huanting and Ye, Guixin and Tang, Zhanyong and Tan, Shin Hwei and Huang, Songfang and Fang, Dingyi and Feng, Yansong and Bian, Lizhong and Wang, Zheng},
+  journal={IEEE Transactions on Information Forensics and Security},
+  volume={16},
+  pages={1943--1958},
+  year={2020},
+  publisher={IEEE}
+}
+
+@inproceedings{ye2020integrating,
+  title={Integrating relation constraints with neural relation extractors},
+  author={Ye, Yuan and Feng, Yansong and Luo, Bingfeng and Lai, Yuxuan and Zhao, Dongyan},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={34},
+  number={05},
+  pages={9442--9449},
+  year={2020}
+}
+
+@inproceedings{tao2020improving,
+  title={Improving matching models with hierarchical contextualized representations for multi-turn response selection},
+  author={Tao, Chongyang and Wu, Wei and Feng, Yansong and Zhao, Dongyan and Yan, Rui},
+  booktitle={Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages={1865--1868},
+  year={2020}
+}
+
+@inproceedings{xu2020coordinated,
+  title={Coordinated reasoning for cross-lingual knowledge graph alignment},
+  author={Xu, Kun and Song, Linfeng and Feng, Yansong and Song, Yan and Yu, Dong},
+  booktitle={Proceedings of the AAAI conference on artificial intelligence},
+  volume={34},
+  number={05},
+  pages={9354--9361},
+  year={2020}
+}
+
+@article{ye2020using,
+  title={Using generative adversarial networks to break and protect text captchas},
+  author={Ye, Guixin and Tang, Zhanyong and Fang, Dingyi and Zhu, Zhanxing and Feng, Yansong and Xu, Pengfei and Chen, Xiaojiang and Han, Jungong and Wang, Zheng},
+  journal={ACM Transactions on Privacy and Security (TOPS)},
+  volume={23},
+  number={2},
+  pages={1--29},
+  year={2020},
+  publisher={ACM New York, NY, USA}
+}
+
+@incollection{guo2020simplifying,
+  title={Simplifying Graph Attention Networks with Source-Target Separation},
+  author={Guo, Hantao and Yan, Rui and Feng, Yansong and Gao, Xuesong and Zhu, Zhanxing},
+  booktitle={ECAI 2020},
+  pages={1166--1173},
+  year={2020},
+  publisher={IOS Press}
+}
+
+@article{li2020domain,
+  title={Domain adaptation for semantic parsing},
+  author={Li, Zechang and Lai, Yuxuan and Feng, Yansong and Zhao, Dongyan},
+  journal={arXiv preprint arXiv:2006.13071},
+  year={2020}
+}
+
+@article{abro2020multi,
+  title={Multi-turn intent determination and slot filling with neural networks and regular expressions},
+  author={Abro, Waheed Ahmed and Qi, Guilin and Ali, Zafar and Feng, Yansong and Aamir, Muhammad},
+  journal={Knowledge-Based Systems},
+  volume={208},
+  pages={106428},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{fu2020latent,
+  title={Latent template induction with Gumbel-CRFS},
+  author={Fu, Yao and Tan, Chuanqi and Bi, Bin and Chen, Mosha and Feng, Yansong and Rush, Alexander},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={20259--20271},
+  year={2020}
 }
 
 @inproceedings{wu-etal-2019-jointly,
@@ -924,6 +1033,22 @@
     abstract = "We study learning of a matching model for response selection in retrieval-based dialogue systems. The problem is equally important with designing the architecture of a model, but is less explored in existing literature. To learn a robust matching model from noisy training data, we propose a general co-teaching framework with three specific teaching strategies that cover both teaching with loss functions and teaching with data curriculum. Under the framework, we simultaneously learn two matching models with independent training sets. In each iteration, one model transfers the knowledge learned from its training set to the other model, and at the same time receives the guide from the other model on how to overcome noise in training. Through being both a teacher and a student, the two models learn from each other and get improved together. Evaluation results on two public data sets indicate that the proposed learning approach can generally and significantly improve the performance of existing matching models.",
 }
 
+@article{fu2019paraphrase,
+  title={Paraphrase generation with latent bag of words},
+  author={Fu, Yao and Feng, Yansong and Cunningham, John P},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+@inproceedings{lai2019lattice,
+  title={Lattice cnns for matching based chinese question answering},
+  author={Lai, Yuxuan and Feng, Yansong and Yu, Xiaohan and Wang, Zheng and Xu, Kun and Zhao, Dongyan},
+  booktitle={Proceedings of the AAAI conference on artificial intelligence},
+  volume={33},
+  number={01},
+  pages={6634--6641},
+  year={2019}
+}
 
 @inproceedings{fu-feng-2018-natural,
     title = "Natural Answer Generation with Heterogeneous Memory",
@@ -1026,6 +1151,123 @@
     abstract = "Identifying long-span dependencies between discourse units is crucial to improve discourse parsing performance. Most existing approaches design sophisticated features or exploit various off-the-shelf tools, but achieve little success. In this paper, we propose a new transition-based discourse parser that makes use of memory networks to take discourse cohesion into account. The automatically captured discourse cohesion benefits discourse parsing, especially for long span scenarios. Experiments on the RST discourse treebank show that our method outperforms traditional featured based methods, and the memory based discourse cohesion can improve the overall parsing performance significantly.",
 }
 
+@article{zhong2018overview,
+  title={Overview of CAIL2018: Legal judgment prediction competition},
+  author={Zhong, Haoxi and Xiao, Chaojun and Guo, Zhipeng and Tu, Cunchao and Liu, Zhiyuan and Sun, Maosong and Feng, Yansong and Han, Xianpei and Hu, Zhen and Wang, Heng and others},
+  journal={arXiv preprint arXiv:1810.05851},
+  year={2018}
+}
+
+@article{xiao2018cail2018,
+  title={Cail2018: A large-scale legal dataset for judgment prediction},
+  author={Xiao, Chaojun and Zhong, Haoxi and Guo, Zhipeng and Tu, Cunchao and Liu, Zhiyuan and Sun, Maosong and Feng, Yansong and Han, Xianpei and Hu, Zhen and Wang, Heng and others},
+  journal={arXiv preprint arXiv:1807.02478},
+  year={2018}
+}
+
+@article{xu2018graph2seq,
+  title={Graph2seq: Graph to sequence learning with attention-based neural networks},
+  author={Xu, Kun and Wu, Lingfei and Wang, Zhiguo and Feng, Yansong and Witbrock, Michael and Sheinin, Vadim},
+  journal={arXiv preprint arXiv:1804.00823},
+  year={2018}
+}
+
+@inproceedings{ren2018proteus,
+  title={Proteus: Network-aware web browsing on heterogeneous mobile systems},
+  author={Ren, Jie and Wang, Xiaoming and Fang, Jianbin and Feng, Yansong and Zhu, Dongxiao and Luo, Zhunchen and Zheng, Jie and Wang, Zheng},
+  booktitle={Proceedings of the 14th International Conference on emerging Networking EXperiments and Technologies},
+  pages={379--392},
+  year={2018}
+}
+
+@article{ren2018adaptive,
+  title={Adaptive web browsing on mobile heterogeneous multi-cores},
+  author={Ren, Jie and Wang, Xiaoming and Fang, Jianbin and Feng, Yansong and Wang, Zheng},
+  journal={IEEE Computer Architecture Letters},
+  year={2018},
+  publisher={IEEE}
+}
+
+@inproceedings{zeng2018scale,
+  title={Scale up event extraction learning via automatic training data generation},
+  author={Zeng, Ying and Feng, Yansong and Ma, Rong and Wang, Zheng and Yan, Rui and Shi, Chongde and Zhao, Dongyan},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={32},
+  number={1},
+  year={2018}
+}
+
+@inproceedings{lai2018chinese,
+  title={A chinese question answering system for single-relation factoid questions},
+  author={Lai, Yuxuan and Jia, Yanyan and Lin, Yang and Feng, Yansong and Zhao, Dongyan},
+  booktitle={Natural Language Processing and Chinese Computing: 6th CCF International Conference, NLPCC 2017, Dalian, China, November 8--12, 2017, Proceedings 6},
+  pages={124--135},
+  year={2018},
+  organization={Springer International Publishing}
+}
+
+@article{jia2018improved,
+  title={Improved discourse parsing with two-step neural transition-based model},
+  author={Jia, Yanyan and Feng, Yansong and Ye, Yuan and Lv, Chao and Shi, Chongde and Zhao, Dongyan},
+  journal={ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)},
+  volume={17},
+  number={2},
+  pages={1--21},
+  year={2018},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{liu2018deep,
+  title={Deep learning in question answering},
+  author={Liu, Kang and Feng, Yansong},
+  journal={Deep Learning in Natural Language Processing},
+  pages={185--217},
+  year={2018},
+  publisher={Springer Singapore}
+}
+
+@inproceedings{shang2018learning,
+  title={Learning to Converse with Noisy Data: Generation with Calibration.},
+  author={Shang, Mingyue and Fu, Zhenxin and Peng, Nanyun and Feng, Yansong and Zhao, Dongyan and Yan, Rui},
+  booktitle={IJCAI},
+  volume={7},
+  year={2018}
+}
+
+@inproceedings{song2018towards,
+  title={Towards a neural conversation model with diversity net using determinantal point processes},
+  author={Song, Yiping and Yan, Rui and Feng, Yansong and Zhang, Yaoyuan and Zhao, Dongyan and Zhang, Ming},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={32},
+  number={1},
+  year={2018}
+}
+
+@inproceedings{ye2018yet,
+  title={Yet another text captcha solver: A generative adversarial network based approach},
+  author={Ye, Guixin and Tang, Zhanyong and Fang, Dingyi and Zhu, Zhanxing and Feng, Yansong and Xu, Pengfei and Chen, Xiaojiang and Wang, Zheng},
+  booktitle={Proceedings of the 2018 ACM SIGSAC conference on computer and communications security},
+  pages={332--348},
+  year={2018}
+}
+
+@article{tao2018improving,
+  title={Improving matching models with contextualized word representations for multi-turn response selection in retrieval-based chatbots},
+  author={Tao, Chongyang and Wu, Wei and Xu, Can and Feng, Yansong and Zhao, Dongyan and Yan, Rui},
+  journal={arXiv preprint arXiv:1808.07244},
+  year={2018}
+}
+
+@article{chen2018encoding,
+  title={Encoding implicit relation requirements for relation extraction: A joint inference approach},
+  author={Chen, Liwei and Feng, Yansong and Huang, Songfang and Luo, Bingfeng and Zhao, Dongyan},
+  journal={Artificial Intelligence},
+  volume={265},
+  pages={45--66},
+  year={2018},
+  publisher={Elsevier}
+}
+
 @inproceedings{luo-etal-2017-learning-noise,
     title = "Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix",
     author = "Luo, Bingfeng  and
@@ -1107,6 +1349,13 @@
     pages = "2727--2736",
 }
 
+@inproceedings{cai2017learning,
+  title={Learning knowledge representation across knowledge graphs},
+  author={Cai, Pengshan and Li, Wei and Feng, Yansong and Wang, Yuanzhuo and Jia, Yantao},
+  booktitle={Workshops at the Thirty-First AAAI Conference on Artificial Intelligence},
+  year={2017}
+}
+
 @inproceedings{xu-etal-2016-question,
     title = "Question Answering on {F}reebase via Relation Extraction and Textual Evidence",
     author = "Xu, Kun  and
@@ -1157,6 +1406,55 @@
     pages = "2397--2407",
 }
 
+@inproceedings{zeng2016wip,
+  title={WIP Event Detection System at TAC KBP 2016 Event Nugget Track.},
+  author={Zeng, Ying and Luo, Bingfeng and Feng, Yansong and Zhao, Dongyan},
+  booktitle={TAC},
+  year={2016}
+}
+@inproceedings{fan2016adaptive,
+  title={Adaptive evolutionary filtering in real-time twitter stream},
+  author={Fan, Feifan and Feng, Yansong and Yao, Lili and Zhao, Dongyan},
+  booktitle={Proceedings of the 25th ACM International on Conference on Information and Knowledge Management},
+  pages={1079--1088},
+  year={2016}
+}
+
+@inproceedings{han2016detecting,
+  title={Detecting Synonymous Predicates from Online Encyclopedia with Rich Features},
+  author={Han, Zhe and Feng, Yansong and Zhao, Dongyan},
+  booktitle={Information Retrieval Technology: 12th Asia Information Retrieval Societies Conference, AIRS 2016, Beijing, China, November 30--December 2, 2016, Proceedings 12},
+  pages={111--122},
+  year={2016},
+  organization={Springer International Publishing}
+}
+
+@inproceedings{lai2016open,
+  title={Open domain question answering system based on knowledge base},
+  author={Lai, Yuxuan and Lin, Yang and Chen, Jiahao and Feng, Yansong and Zhao, Dongyan},
+  booktitle={Natural Language Understanding and Intelligent Applications: 5th CCF Conference on Natural Language Processing and Chinese Computing, NLPCC 2016, and 24th International Conference on Computer Processing of Oriental Languages, ICCPOL 2016, Kunming, China, December 2--6, 2016, Proceedings 24},
+  pages={722--733},
+  year={2016},
+  organization={Springer International Publishing}
+}
+
+@inproceedings{jia2016transition,
+  title={Transition-based discourse parsing with multilayer stack long short term memory},
+  author={Jia, Yanyan and Feng, Yansong and Luo, Bingfeng and Ye, Yuan and Liu, Tianyang and Zhao, Dongyan},
+  booktitle={Natural Language Understanding and Intelligent Applications: 5th CCF Conference on Natural Language Processing and Chinese Computing, NLPCC 2016, and 24th International Conference on Computer Processing of Oriental Languages, ICCPOL 2016, Kunming, China, December 2--6, 2016, Proceedings 24},
+  pages={360--373},
+  year={2016},
+  organization={Springer International Publishing}
+}
+
+@inproceedings{zeng2016convolution,
+  title={A convolution BiLSTM neural network model for Chinese event extraction},
+  author={Zeng, Ying and Yang, Honghui and Feng, Yansong and Wang, Zheng and Zhao, Dongyan},
+  booktitle={Natural Language Understanding and Intelligent Applications: 5th CCF Conference on Natural Language Processing and Chinese Computing, NLPCC 2016, and 24th International Conference on Computer Processing of Oriental Languages, ICCPOL 2016, Kunming, China, December 2--6, 2016, Proceedings 24},
+  pages={275--287},
+  year={2016},
+  organization={Springer International Publishing}
+}
 @inproceedings{xu-etal-2015-semantic,
     title = "Semantic Relation Classification via Convolutional Neural Networks with Simple Negative Sampling",
     author = "Xu, Kun  and
@@ -1194,6 +1492,15 @@
     url = "https://aclanthology.org/P15-2037",
     doi = "10.3115/v1/P15-2037",
     pages = "225--230",
+}
+
+@inproceedings{xu2015longest,
+  title={What is the longest river in the usa? semantic parsing for aggregation questions},
+  author={Xu, Kun and Zhang, Sheng and Feng, Yansong and Huang, Songfang and Zhao, Dongyan},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={29},
+  number={1},
+  year={2015}
 }
 
 @inproceedings{chen-etal-2014-encoding,
@@ -1234,7 +1541,87 @@
     doi = "10.3115/v1/D14-1205",
     pages = "1912--1923",
 }
+@inproceedings{xu2014answering,
+  title={Answering natural language questions via phrasal semantic parsing},
+  author={Xu, Kun and Zhang, Sheng and Feng, Yansong and Zhao, Dongyan},
+  booktitle={CCF International Conference on Natural Language Processing and Chinese Computing},
+  pages={333--344},
+  year={2014},
+  organization={Springer Berlin Heidelberg Berlin, Heidelberg}
+}
 
+@inproceedings{mo2014community,
+  title={Community-based matrix factorization for scalable music recommendation on smartphones},
+  author={Mo, Jinghui and Feng, Yansong and Jia, Aixia and Huang, Songfang and Qin, Yong and Zhao, Dongyan},
+  booktitle={2014 IEEE International Conference on Multimedia and Expo (ICME)},
+  pages={1--6},
+  year={2014},
+  organization={IEEE}
+}
+
+@inproceedings{mo2014robust,
+  title={A Robust Audio Similarity Estimation Method for Audio Alignment in Mobile Karaoke Apps},
+  author={Mo, Jinghui and Feng, Yansong and Zhao, Dongyan},
+  booktitle={Proceedings of International Conference on Multimedia Retrieval},
+  pages={495--498},
+  year={2014}
+}
+
+@article{chen2013extracting,
+  title={Extracting relations from the web via weakly supervised learning},
+  author={Chen, L and Feng, Y and Zhao, D},
+  journal={Journal of Computer Research and Development},
+  volume={50},
+  number={9},
+  pages={1825--1835},
+  year={2013}
+}
+@inproceedings{rao2013taxonomy,
+  title={Taxonomy based personalized news recommendation: Novelty and diversity},
+  author={Rao, Junyang and Jia, Aixia and Feng, Yansong and Zhao, Dongyan},
+  booktitle={International Conference on Web Information Systems Engineering},
+  pages={209--218},
+  year={2013},
+  organization={Springer Berlin Heidelberg Berlin, Heidelberg}
+}
+@article{zheng2013efficient,
+  title={Efficient simrank-based similarity join over large graphs},
+  author={Zheng, Weiguo and Zou, Lei and Feng, Yansong and Chen, Lei and Zhao, Dongyan},
+  journal={Proceedings of the VLDB Endowment},
+  volume={6},
+  number={7},
+  pages={493--504},
+  year={2013},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{wang2013s,
+  title={S-store: An engine for large rdf graph integrating spatial information},
+  author={Wang, Dong and Zou, Lei and Feng, Yansong and Shen, Xuchuan and Tian, Jilei and Zhao, Dongyan},
+  booktitle={Database Systems for Advanced Applications: 18th International Conference, DASFAA 2013, Wuhan, China, April 22-25, 2013. Proceedings, Part II 18},
+  pages={31--47},
+  year={2013},
+  organization={Springer Berlin Heidelberg}
+}
+
+@inproceedings{rao2013personalized,
+  title={Personalized news recommendation using ontologies harvested from the web},
+  author={Rao, Junyang and Jia, Aixia and Feng, Yansong and Zhao, Dongyan},
+  booktitle={International conference on web-age information management},
+  pages={781--787},
+  year={2013},
+  organization={Springer Berlin Heidelberg Berlin, Heidelberg}
+}
+
+@article{wang2013two,
+  title={Two-stage multiple kernel learning with multiclass kernel polarization},
+  author={Wang, Tinghua and Zhao, Dongyan and Feng, Yansong},
+  journal={Knowledge-Based Systems},
+  volume={48},
+  pages={10--16},
+  year={2013},
+  publisher={Elsevier}
+}
 
 @inproceedings{chen-etal-2012-explore,
     title = "Explore Person Specific Evidence in Web Person Name Disambiguation",
@@ -1252,6 +1639,17 @@
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/D12-1076",
     pages = "832--842",
+}
+
+@article{feng2012automatic,
+  title={Automatic caption generation for news images},
+  author={Feng, Yansong and Lapata, Mirella},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={35},
+  number={4},
+  pages={797--812},
+  year={2012},
+  publisher={IEEE}
 }
 
 @inproceedings{woodsend-etal-2010-title,
@@ -1336,4 +1734,13 @@
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/P08-1032",
     pages = "272--280",
+}
+@inproceedings{feng2006novel,
+  title={A novel fingerprint matching scheme based on local structure compatibility},
+  author={Feng, Yansong and Feng, Jufu and Chen, Xiaoguang and Song, Zhen},
+  booktitle={18th International Conference on Pattern Recognition (ICPR'06)},
+  volume={4},
+  pages={374--377},
+  year={2006},
+  organization={IEEE}
 }
