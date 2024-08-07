@@ -11,4 +11,4 @@ nav_order: 6
 
 **Empirical Methods for Natural Language Processing** (2013 --)
 
-**Foundations for Natural Language Processing** (2023 --)
+**Foundations of Natural Language Processing** (2023 --)
