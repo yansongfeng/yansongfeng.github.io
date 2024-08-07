@@ -6,24 +6,20 @@
 
 
 
-@inproceedings{li-feng-2024-motion,
-    title = "Motion Generation from Fine-grained Textual Descriptions",
-    author = "Li, Kunhang  and
-      Feng, Yansong",
-    editor = "Calzolari, Nicoletta  and
-      Kan, Min-Yen  and
-      Hoste, Veronique  and
-      Lenci, Alessandro  and
-      Sakti, Sakriani  and
-      Xue, Nianwen",
-    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
-    month = may,
-    year = "2024",
-    address = "Torino, Italia",
-    publisher = "ELRA and ICCL",
-    url = "https://aclanthology.org/2024.lrec-main.1016",
-    pages = "11625--11641",
-    abstract = "The task of **text2motion** is to generate human motion sequences from given textual descriptions, where the model explores diverse mappings from natural language instructions to human body movements. While most existing works are confined to coarse-grained motion descriptions, e.g., {\_}{''}A man squats.{''}{\_}, fine-grained descriptions specifying movements of relevant body parts are barely explored. Models trained with coarse-grained texts may not be able to learn mappings from fine-grained motion-related words to motion primitives, resulting in the failure to generate motions from unseen descriptions. In this paper, we build a large-scale language-motion dataset specializing in fine-grained textual descriptions, FineHumanML3D, by feeding GPT-3.5-turbo with step-by-step instructions with pseudo-code compulsory checks. Accordingly, we design a new text2motion model, FineMotionDiffuse, making full use of fine-grained textual information. Our quantitative evaluation shows that FineMotionDiffuse trained on FineHumanML3D improves FID by a large margin of 0.38, compared with competitive baselines. According to the qualitative evaluation and case study, our model outperforms MotionDiffuse in generating spatially or chronologically composite motions, by learning the implicit mappings from fine-grained descriptions to the corresponding basic motions. We release our data at [https://github.com/KunhangL/finemotiondiffuse](https://github.com/KunhangL/finemotiondiffuse).",
+@inproceedings{finemotiondiffuse,
+    abbr = {LREC-COLING<br>2024},
+    title = {Motion Generation from Fine-grained Textual Descriptions},
+    author = {Li, Kunhang and Feng, Yansong},
+    year = {2024},
+    booktitle={the Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
+    abstract = {The task of <b>text2motion</b> is to generate human motion sequences from given textual descriptions, where the model explores diverse mappings from natural language instructions to human body movements. While most existing works are confined to coarse-grained motion descriptions, e.g., ``<i>A man squats.</i>", fine-grained descriptions specifying movements of relevant body parts are barely explored. Models trained with coarse-grained texts may not be able to learn mappings from fine-grained motion-related words to motion primitives, resulting in the failure to generate motions from unseen descriptions. In this paper, we build a large-scale language-motion dataset specializing in fine-grained textual descriptions, FineHumanML3D, by feeding GPT-3.5-turbo with step-by-step instructions with pseudo-code compulsory checks. Accordingly, we design a new text2motion model, FineMotionDiffuse, making full use of fine-grained textual information. Our quantitative evaluation shows that FineMotionDiffuse trained on FineHumanML3D improves FID by a large margin of 0.38, compared with competitive baselines. According to the qualitative evaluation and case study, our model outperforms MotionDiffuse in generating spatially or chronologically composite motions, by learning the implicit mappings from fine-grained descriptions to the corresponding basic motions.},
+    pdf = {https://aclanthology.org/2024.lrec-main.1016},
+    arxiv = {2403.13518},
+    website = {https://kunhangl.github.io/finemotiondiffuse/},
+    slides = {/LREC_COLING_2024/slides.pdf},
+    poster = {/LREC_COLING_2024/poster.pdf},
+    video = {https://www.youtube.com/embed/CrtMju_39gE},
+    selected = {true}
 }
 
 @inproceedings{tao-etal-2024-probing,
