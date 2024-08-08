@@ -29,9 +29,19 @@ profiles:
     # image_circular: false # crops the image to make it circular
     more_info: >
       <p>Quzhe Huang</p>
-      <p> Xiaofan Yang (graduate student at Columbia University --> Two Sigma)</p>
-      <p> Yi Feng (Google --> CEO of an AI startup)</p>
-      <p>Yichen Jiang (Now at Google)</p>
-      <p>Yidong Chen (Now at Game@163)</p>
+      <p>Quzhe Huang</p>
+      <p>Nan Hu</p>
+      <p>Zhenwei An</p>
+      <p>Zhibin Chen</p>
+      <p>Tianyi Liu</p>
+      <p>Chengang Hu</p>
+      <p>Yuting Wu</p>
+      <p>Xiaohan Yu</p>
+      <p>Yuxuan Lai</p>
+      <p>Yuan Ye</p>
+      <p>Jizhi Tang</p>
+      <p> Zechang Li</p>
+      <p>Yang Lin</p>
+     
    
 ---
