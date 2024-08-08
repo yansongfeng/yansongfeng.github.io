@@ -34,8 +34,8 @@ profiles:
    <p>Tianyi Liu</p>
    <p>Chengang Hu</p>
    <p>Yuting Wu</p>
-	<p>Xiaohan Yu</p>
-	<p>Yuxuan Lai</p>
+<p>Xiaohan Yu</p>
+<p>Yuxuan Lai</p>
     <p>Yuan Ye</p>
     <p>Jizhi Tang</p>
    <p> Zechang Li</p>
