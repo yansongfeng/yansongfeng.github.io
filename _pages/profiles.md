@@ -14,9 +14,13 @@ profiles:
     # content: about_einstein.md
     # image_circular: false # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>Xiao Liu</p>
+      <p> Mingxu Tao</p>
+      <p>Chen Zhang</p>
+      <p>Yuton Hu</p>
+      <p>Zirui Wu</p>
+      <p>Jiuheng Lin</p>
+      <p>Kangcheng Luo</p>
 
    
   - align: left
@@ -24,9 +28,6 @@ profiles:
     # content: about_einstein.md
     # image_circular: false # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
       <p>Quzhe Huang</p>
       <p> Xiaofan Yang (graduate student at Columbia University --> Two Sigma)</p>
       <p> Yi Feng (Google --> CEO of an AI startup)</p>
