@@ -8,9 +8,9 @@ nav_order: 7
 ---
 ##
 
-*"Much have I learned from my teachers, more from my colleagues, but from my students, most of all."*    Rabbi Hanina 
+*"Much have I learned from my teachers, more from my colleagues, but from my students, most of all."*    -**Rabbi Hanina** 
 
-*"As long as we work together — with both urgency and determination — there are no limits to what we can achieve."* Paul G. Allen
+*"As long as we work together — with both urgency and determination — there are no limits to what we can achieve."*  -**Paul G. Allen**
 
 ## Current Students:
  - Mingxu Tao
