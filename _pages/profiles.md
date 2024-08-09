@@ -15,11 +15,17 @@ profiles:
     # image_circular: false # crops the image to make it circular
     more_info: >
       <p>Xiao Liu</p>
+      
       <p> Mingxu Tao</p>
+      
       <p>Chen Zhang</p>
+      
       <p>Yuton Hu</p>
+      
       <p>Zirui Wu</p>
+      
       <p>Jiuheng Lin</p>
+      
       <p>Kangcheng Luo</p>
 
    
