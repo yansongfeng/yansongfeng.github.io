@@ -7,7 +7,7 @@ nav: true
 nav_order: 7
 ---
 
-Courses:
+## Courses:
 
 **Introduction to Computation (B)** (2013 --)
 
