@@ -15,6 +15,12 @@ nav_order: 7
 
 **Foundations of Natural Language Processing** (2023 --)
 
+*QuZhe Huang*
+
+Mingxu Tao
+- Xiao Liu
+- Chen Zhang
+
 ## Alumni:
       <p>Quzhe Huang</p>
       <p>Quzhe Huang</p>
