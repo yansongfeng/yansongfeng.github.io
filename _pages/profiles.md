@@ -9,11 +9,17 @@ nav_order: 7
 
 ## Current Students:
   Mingxu Tao
+  
   Xiao Liu
+  
   Chen Zhang
+  
   Yuton Hu
+  
   Zirui Wu
+  
   Jiuheng Lin
+  
   Kangcheng Luo
 
 ## Alumni:
