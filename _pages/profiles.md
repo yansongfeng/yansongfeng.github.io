@@ -8,19 +8,14 @@ nav_order: 7
 ---
 
 ## Current Students:
-
-**Introduction to Computation (B)** (2013 --)
-
-**Empirical Methods for Natural Language Processing** (2013 --)
-
-**Foundations of Natural Language Processing** (2023 --)
-
-*QuZhe Huang*
-
 Mingxu Tao
-- Xiao Liu
-- Chen Zhang
+Xiao Liu
+Chen Zhang
+Yuton Hu
+Zirui Wu
+Jiuheng Lin
+Kangcheng Luo
 
 ## Alumni:
-      <p>Quzhe Huang</p>
-      <p>Quzhe Huang</p>
+Quzhe Huang
+
