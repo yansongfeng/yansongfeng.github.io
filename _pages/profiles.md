@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
-description: I teach C prgoramming and natural language processing for undergraduates.
+permalink: /people/
+title: people
+description: members of the lab or group
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 Courses:
