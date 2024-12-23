@@ -3,6 +3,82 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{lin-etal-2024-chain,
+    title = "Chain of Discussion: A Multi-Model Framework for Complex Evidence-Based Question Answering",
+    author = "Tao, Mingxu  and
+      Zhao, Dongyan  and
+      Feng, Yansong",
+    booktitle = "Proceedings of the 2025 International Conference on Computational Linguistics (COLING 2025)",
+",
+    abbr = {COLING<br>2025},
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+}
+
+@inproceedings{lin-etal-2024-chain,
+    title = "Chain of Condition: Construct, Verify and Solve Conditions for Conditional Question Answering",
+    author = "Lin, Jiuheng  and
+      Lai, Yuxuan  and
+      Feng, Yansong",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    abbr = {EMNLP<br>2024},
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.968",
+    doi = "10.18653/v1/2024.findings-emnlp.968",
+    pages = "16596--16611",
+    abstract = "Conditional question answering (CQA) is an important task that aims to find probable answers and identify missing conditions. Existing approaches struggle with CQA due to two challenges: (1) precisely identifying necessary conditions and the logical relationship, and (2) verifying conditions to detect any that are missing. In this paper, we propose a novel prompting approach, Chain of condition, by first identifying all conditions and constructing their logical relationships explicitly according to the document, then verifying whether these conditions are satisfied, finally solving the logical expression to indicate any missing conditions and generating the answer accordingly. Experiments on two CQA benchmark datasets show our chain of condition outperforms existing prompting baselines, establishing a new state of the art. Furthermore, with only a few examples, our method can facilitate GPT-3.5-Turbo or GPT-4 to outperform all existing supervised models.",
+}
+
+@inproceedings{tao-etal-2024-unlocking,
+    title = "Unlocking the Potential of Model Merging for Low-Resource Languages",
+    author = "Tao, Mingxu  and
+      Zhang, Chen  and
+      Huang, Quzhe  and
+      Ma, Tianyao  and
+      Huang, Songfang  and
+      Zhao, Dongyan  and
+      Feng, Yansong",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    abbr = {EMNLP<br>2024},
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.508",
+    doi = "10.18653/v1/2024.findings-emnlp.508",
+    pages = "8705--8720",
+    abstract = "Adapting large language models (LLMs) to new languages typically involves continual pre-training (CT) followed by supervised fine-tuning (SFT). However, this CT-then-SFT approach struggles with limited data in the context of low-resource languages, failing to balance language modeling and task-solving capabilities. We thus propose a new model merging solution as an alternative for low-resource languages, combining models with distinct capabilities into a single model without additional training. We use model merging to develop task-solving LLMs for low-resource languages without SFT data in the target languages. Our experiments based on Llama-2-7B demonstrate that model merging effectively endows LLMs for low-resource languages with task-solving abilities, outperforming CT-then-SFT in scenarios with extremely scarce data. Observing performance saturation in model merging with increasingly more training tokens, we further analyze the merging process and introduce a slack variable to the model merging algorithm to mitigate the loss of important parameters, thereby enhancing model performance. We hope that model merging can benefit more human languages suffering from data scarcity with its higher data efficiency.",
+}
+
+@inproceedings{wu-feng-2024-protrix,
+    title = "{P}ro{T}rix: Building Models for Planning and Reasoning over Tables with Sentence Context",
+    author = "Wu, Zirui  and
+      Feng, Yansong",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    abbr = {EMNLP<br>2024},
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.253",
+    doi = "10.18653/v1/2024.findings-emnlp.253",
+    pages = "4378--4406",
+    abstract = "Tables play a crucial role in conveying information in various domains. We propose a Plan-then-Reason framework to answer different types of user queries over tables with sentence context. The framework first plans the reasoning paths over the context, then assigns each step to program-based or textual reasoning to reach the final answer. This framework enhances the table reasoning abilities for both in-context learning and fine-tuning methods. GPT-3.5-Turbo following Plan-then-Reason framework surpasses other prompting baselines without self-consistency while using less API calls and in-context demonstrations. We also construct an instruction tuning set TrixInstruct to evaluate the effectiveness of fine-tuning with this framework. We present ProTrix model family by finetuning models on TrixInstruct. Our experiments show that ProTrix family generalizes to diverse unseen tabular tasks with only 6k training instances. We further demonstrate that ProTrix can generate accurate and faithful explanations to answer complex free-form questions. Our work underscores the importance of the planning and reasoning abilities towards a model over tabular tasks with generalizability and interpretability. We will open-source our dataset and models.",
+}
+
 @inproceedings{huang-etal-2024-harder,
     title = "Harder Task Needs More Experts: Dynamic Routing in MoE Models",
     abbr = {ACL<br>2024},
