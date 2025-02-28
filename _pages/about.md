@@ -20,4 +20,4 @@ I am an associate professor in the [Wangxuan Institute of Computer Technology](h
 
 My current research focuses on harnessing large language models for social good, to support intelligent applications for people who are in need. We are fortunate to be supported by NSFC, RGC, the MOST and also partners from industry.
 
-I serve as an action editor for Computational Linguistics (2025 -), and senior area chair for ACL Rolling Review (2023 -).
+I serve as an action editor for Computational Linguistics (2025 -), and senior area chair for ACL Rolling Review (2023 -). 
