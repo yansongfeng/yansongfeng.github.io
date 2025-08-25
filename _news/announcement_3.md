@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our papers got accepted by EMNLP 2025!
+Our papers got accepted by EMNLP 2025
